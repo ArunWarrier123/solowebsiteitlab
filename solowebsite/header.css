@@ -1,0 +1,53 @@
+#nav{
+    margin-left: 50em;
+    padding: 5px;
+}
+.nav-link{
+    color:  grey;
+    font-size: 20px;
+}
+.nav-item{
+    padding: 0px 20px;
+}
+
+.navbarbro{
+    text-align: center;
+    position: absolute;
+    left: 450px;
+    top: 1em;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+    content: '.';
+    color: transparent;
+    /* background: #00503D; */
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+  
+  nav.fill ul li a {
+    transition: all 2s;
+  }
+  
+  nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  nav.fill ul li a:hover {
+    color: #00503D;
+    z-index: 1;
+    font-style: italic;
+    font-size: large;
+  }
+  nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }

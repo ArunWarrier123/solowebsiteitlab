@@ -1,0 +1,45 @@
+.indicator{
+    position: relative;
+}
+
+
+.categories ul li{
+    list-style: none;
+    padding: 20px;
+    margin-top: 10em;
+    margin-left: 0%;
+    float: left;
+    width: fit-content;
+}
+
+.categories ul li a{
+    color: inherit;
+    text-decoration: none;
+    width: 10%;
+}
+
+.categories ul li.active{
+    color: red;
+}
+
+.lipp{
+    line-height: 25px;
+    font-size: 17px;
+    float: right;
+    margin-right: 34em;
+}
+
+.items{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;    
+}
+.items li{
+    list-style: none;
+    overflow: hidden;
+    height: 500px;
+    padding: 15px;
+    margin: 10px;
+    border-radius:10px;
+    overflow: hidden;
+}

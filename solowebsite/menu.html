@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- google api fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    
+    <title>Document</title>
+</head>
+
+<body background="bg.png.jpg" style="background-size:max-content">
+<header id="header">
+    <nav class="fill">
+        <div style=" position:absolute; left:50px; top:1em; font-size: larger; color: #00503D;"><b>Mamma Mia</b></div>
+
+
+        <ul class="navbarbro" style="display: flex;flex-direction: row; list-style-type: none;">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html" style="color:#00503D;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+    <title>Document</title>
+</head>
+<body> 
+    <header class="categories">
+        <div>
+            <ul class="indicator">
+                <li data-filter="all" class="active"><a href="#">All</a></li>
+                <li data-filter="SeaFood"><a href="#">SeaFood</a></li>
+                <li data-filter="Pizza"><a href="#">Pizza</a></li>
+                <li data-filter="Desserts"><a href="#desserts">Desserts</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div>
+        <ul class="items" style="list-style-type:none; padding: 0;">
+            <li data-category="SeaFood">
+                <img src="sushi.jpg" style="width:15%; border-radius: 10%;">
+                <p class="lipp">Vinegared rice with sugar and salt having enclosed smoked salmon</p>
+                <h4 style="margin-left:2em">$45.99</h4>
+            </li>
+            <li data-category="SeaFood">
+                <img src="prawnsfry.jpg" style="width:15%; border-radius: 10%;">
+                <p class="lipp">Tender Fried prawns dipped in chilli sauce served with a side of onion</p>
+                <h4>$30.99</h4>
+            </li>
+            <li data-category="Pizza">
+                <img src="spicypizza.png" style="width:15%; height: 50%;">
+                <p class="lipp">Spread of spicy sauce with mozzarella,chicken and bacon toppings.</p>
+                <h4>$25.99</h4>
+            </li>
+            <li data-category="Desserts">
+                <img src="scotchvanilla.jpg" style="width:15%; border-radius: 10%;">
+                <p class="lipp">Combination of Vanilla bean and Highlands Scotch Whiskey</p>
+                <h4>$30.99</h4>
+            </li>
+            <li data-category="Pizza">
+                <img src="DeluxePizza.png" style="width:15%;">
+                <p class="lipp">Spread of Chicken Sausage with cheese,capsicum and chilli toppings</p>
+                <h4>$40.99</h4>
+            </li>
+            <li data-category="SeaFood">
+                <img src="food.png" style="width:15%;">
+                <p class="lipp">Cooked salmon served with a side of fresh salad graced with garlic.</p>
+                <h4>$35.99</h4>
+            </li>
+            <li data-category="Pizza">
+                <img src="margharita.jpg" style="width:15%; border-radius: 10%;">
+                <p class="lipp">Pizza with perfectly melty mozzarella cheese and fresh basil.</p>
+                <h4>$35.99</h4>
+            </li>
+            <li data-category="SeaFood">
+                <img src="calamari.jpg" style="width:15%; border-radius: 10%;">
+                <p class="lipp">Fried calamari coated with flour,cornstarch and baking powder.</p>
+                <h4>$45.99</h4>
+            </li>
+            <li data-category="SeaFood">
+                <img src="shrimps.jpg" style="width:15%; border-radius: 10%;">
+                <p class="lipp">Cooked Shrimps with flavourful sauce and some veggies.</p>
+                <h4>$45.99</h4>
+            </li>
+            <li data-category="Desserts">
+                <img src="triplesundae.jpg" style="width:15%; border-radius: 10%;">
+                <p class="lipp">Ice cream Sundae with caramelized cream served on the side.</p>
+                <h4>$30.99</h4>
+            </li>
+            <li data-category="Desserts">
+                <img src="trichocobrownie.png" style="width:15%;">
+                <p class="lipp">Dense, moist and fudgy dessert with hot chocolate poured on top.</p>
+                <h4>$20.99</h4>
+            </li>
+            <li data-category="Desserts">
+                <img src="vanillacaramel.jpg" style="width:15%; border-radius: 10%;">
+                <p class="lipp">Vanilla IceCream soaked in sweet caramel.</p>
+                <h4>$25.99</h4>
+            </li>
+        
+        
+        
+            
+    </ul>
+
+    </div>
+    <script type="text/javascript">
+        let indicator = document.querySelector('.indicator').children;
+        let main = document.querySelector('.items').children;
+
+        for (let i = 0; i < indicator.length; i++) 
+        {
+            indicator[i].onclick = function()
+            {
+                console.log("CLIKED ");
+                for (let x = 0; x < indicator.length; x++) 
+                {
+                    indicator[x].classList.remove('active');                   
+                }
+                this.classList.add('active');
+                const displayItems = this.getAttribute('data-filter');
+                for (let z = 0; z < main.length; z++) 
+                {
+                    main[z].style.transform = 'scale(0)';
+                    setTimeout(() => {
+                        main[z].style.display = 'none';
+                    }, 500);
+                    
+                    if((main[z].getAttribute('data-category') == displayItems) || 
+                    displayItems == 'all')
+                    {
+                        console.log("got 1");
+                        main[z].style.transform = 'scale(1)';
+                    setTimeout(() => {
+                        main[z].style.display = 'block';
+                    }, 500);
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
